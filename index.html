@@ -23,10 +23,27 @@
             <button onclick="addDisplay('2')">2</button>
             <button onclick="addDisplay('3')">3</button>
             <button onclick="addDisplay('*')">*</button>
-            <button onclick="addDisplay('0')">0</button>
             <button onclick="addDisplay('.')">.</button>
+            <button onclick="addDisplay('0')">0</button>
             <button onclick="addDisplay('/')">/</button>
             <button onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="calculator">
+        <div>
+            <input type="text" id="num1" placeholder="Enter number 1">
+            <input type="text" id="num2" placeholder="Enter number 2">
+        </div>
+        <div class="buttons">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
+        </div>
+        <div>
+            <p>Result:</p>
+            <input type="text" id="result" disabled>
         </div>
     </div>
     <script src="app.js"></script>
